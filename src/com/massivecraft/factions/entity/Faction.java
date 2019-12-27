@@ -1086,7 +1086,7 @@ public class Faction extends Entity<Faction> implements FactionsParticipator
 			}
 
 			// no members left and faction isn't permanent, so disband it
-			if (MConf.get().logFactionDisband)
+			/*if (MConf.get().logFactionDisband)
 			{
 				Factions.get().log("The faction "+this.getName()+" ("+this.getId()+") has been disbanded since it has no members left.");
 			}
@@ -1094,7 +1094,7 @@ public class Faction extends Entity<Faction> implements FactionsParticipator
 			for (MPlayer mplayer : MPlayerColl.get().getAllOnline())
 			{
 				mplayer.msg("<i>The faction %s<i> was disbanded.", this.getName(mplayer));
-			}
+			}*/
 
 			this.detach();
 		}
